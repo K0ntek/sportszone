@@ -1,2 +1,2 @@
-# sportszone
+# SportZone
 HTML,CSS,JQUERY
