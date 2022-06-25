@@ -1,0 +1,297 @@
+@keyframes menuappear {
+  0% {
+    margin-top: -200px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes titleappear {
+  0% {
+    transform: rotatey(90deg);
+  }
+
+  100% {
+    transform: rotatey(0deg);
+  }
+}
+@keyframes pulse {
+  0% {
+    font-size: 70px;
+    opacity: 0.5;
+  }
+  50% {
+    font-size: 75px;
+    opacity: 1;
+  }
+  100% {
+    font-size: 70px;
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    font-size: 90px;
+    opacity: 0.5;
+  }
+  50% {
+    font-size: 95px;
+    opacity: 1;
+    box-shadow: 0px 0px 87px 16px #000000;
+  }
+  100% {
+    font-size: 90px;
+    opacity: 0.5;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -24px;
+  left: -8px;
+}
+.header {
+  color: white;
+  height: 100%;
+  background: url("../images/viper-images/2016-dodge-viper-acr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#menu {
+  backdrop-filter: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 30px 0px black;
+
+  animation: menuappear 1.5s both;
+}
+.header ul {
+  display: flex;
+}
+
+.header li {
+  list-style: none;
+  margin: 30px;
+}
+
+.header a {
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 10px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+}
+.header a:hover {
+  background: white;
+  color: black;
+  transition: all;
+  transition: 0.5s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px white;
+}
+.title {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+h1 span:nth-child(1) {
+  font-size: 70px;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 40px;
+  letter-spacing: 5px;
+
+  animation: pulse 3s both infinite;
+}
+h1 span:nth-child(3) {
+  font-size: 90px;
+  background: rgba(98, 0, 0, 0.8);
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: black;
+  letter-spacing: 8px;
+  position: absolute;
+  top: 100%;
+  left: 3%;
+
+  animation: pulse2 3s both infinite;
+}
+
+#chevy {
+  position: absolute;
+  left: -32%;
+  top: 80%;
+  animation: titleappear 2s both;
+}
+
+#chevy2 {
+  position: absolute;
+  left: -25%;
+  top: 200%;
+  animation: titleappear 2s both;
+}
+#car {
+  width: 740px;
+  height: 1000px;
+  box-shadow: 0px 0px 87px 30px rgb(0, 0, 0);
+  border-radius: 0px 30px 30px 0px;
+}
+#car2 {
+  width: 600px;
+  height: 1000px;
+  box-shadow: 0px 0px 87px 30px rgb(0, 0, 0);
+  border-radius: 0px 30px 30px 0px;
+}
+.vert {
+  writing-mode: vertical-rl;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 2px 4px;
+  position: absolute;
+  top: 1%;
+  left: 90%;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 55%;
+  position: absolute;
+  top: 102%;
+  right: 2%;
+}
+.description p {
+  font-size: 30px;
+  text-align: justify;
+}
+.description h1 {
+  font-size: 50px;
+  text-align: right;
+  margin-right: 30px;
+}
+
+.description2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 65%;
+  position: absolute;
+  top: 210%;
+  right: 2%;
+}
+.description2 p {
+  font-size: 30px;
+  text-align: justify;
+  padding-left: 20px;
+}
+.description2 .textList {
+  padding-left: 60px;
+}
+.description2 h1 {
+  font-size: 50px;
+  text-align: right;
+  margin-right: 30px;
+}
+.carList {
+  margin-left: 50px;
+}
+.gallery {
+  position: absolute;
+  top: 315%;
+  left: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(3, auto-flow);
+
+  gap: 3%;
+  row-gap: 5%;
+}
+.gallery h1 {
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.glCar {
+  width: 560px;
+  height: max-content;
+}
+
+.glText {
+  width: 45%;
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 40px;
+}
+
+.glText1 {
+  position: absolute;
+  top: 270%;
+  left: 0;
+}
+
+.item-1:hover {
+  background: rgb(220, 20, 60);
+  box-shadow: 0px 0px 30px 20px rgb(220, 20, 60, 0.7);
+  transition: 0.5s;
+}
+
+.glText2 {
+  position: absolute;
+  top: 283%;
+  left: 35%;
+}
+
+.item-2:hover {
+  background: rgb(220, 20, 60);
+  box-shadow: 0px 0px 30px 20px rgb(220, 20, 60, 0.7);
+  transition: 0.5s;
+}
+
+.glText3 {
+  position: absolute;
+  top: 273%;
+  right: 0;
+}
+
+.item-3:hover {
+  background: rgb(220, 20, 60);
+  box-shadow: 0px 0px 30px 20px rgb(220, 20, 60, 0.7);
+  transition: 0.5s;
+}
+
+#block {
+  position: absolute;
+  top: 90%;
+  left: -100%;
+  border-radius: 30px;
+  width: 100%;
+  height: 1000px;
+  background: rgb(87, 0, 17);
+}
+
+#block2 {
+  position: absolute;
+  top: 210%;
+  left: -100%;
+  border-radius: 30px;
+  width: 100%;
+  height: 1000px;
+  background: orange;
+}
